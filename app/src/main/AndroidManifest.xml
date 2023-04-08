@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="APPDOCTRUYEN_NHOM6"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.APPDOCTRUYEN_NHOM6">
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainActivity" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainCapNhat"></activity>
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainXemDanhGia" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainChiaSe" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainDanhGia" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainDangBai" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.model.main.MainAdmin" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.model.main.MainThongTin" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainNoiDungTruyen" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainTimKiem" />
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainDangKy" />
+
+        <activity android:name="com.example.APPDOCTRUYEN_NHOM6.MainDangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
