@@ -1745,10 +1745,103 @@ public class databasedoctruyen extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+    public void AddTaiKhoan(TaiKhoan taiKhoan){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        //không thể lưu trực tiếp xuống insert nên thông qua contentvalues
+        ContentValues values = new ContentValues();
+        values.put(TEN_TAI_KHOAN,taiKhoan.getmTenTaiKhoan());
+        values.put(MAT_KHAU,taiKhoan.getmMatKhau());
+        values.put(EMAIL,taiKhoan.getmEmail());
+        values.put(PHAN_QUYEN,taiKhoan.getmPhanQuyen());
+
+        db.insert(TABLE_TAIKHOAN,null,values);
+        //đóng lại db cho an toàn
+        db.close();
+        //Log.e("Add Tai Khoan ","thành công");
+    }
+
+
+    //Lấy tất cả tài khoản
+    public Cursor getData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TAIKHOAN , null );
+        return res;
+    }
+
+
+
+    //Thêm truyện
+    public void AddTruyen(Truyen truyen){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(TEN_TRUYEN,truyen.getTenTruyen());
+        values.put(NOI_DUNG,truyen.getNoiDung());
+        values.put(IMAGE,truyen.getAnh());
+        values.put(ID_TAI_KHOAN,truyen.getID_TK());
+
+        db.insert(TABLE_TRUYEN,null,values);
+        db.close();
+        Log.e("Add Truyện : ","Thành công");
+    }
+
+    //Thêm đánh giá
+    public void AddDanhGia(DanhGia danhgia){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(NOI_DUNG_DANH_GIA,danhgia.getNoiDungDanhGia());
+        // values.put(ID_TAI_KHOAN,danhgia.getIDTK());
+        values.put(TEN_TAI_KHOAN,danhgia.getTenTK());
+        values.put(TEN_TRUYEN, danhgia.getTenTruyen());
+        db.insert(TABLE_DANH_GIA,null,values);
+        db.close();
+        Log.e("Add đánh giá : ","Thành công");
+    }
+
+
+
+    //Lấy tin mới nhất
+    public Cursor getData1(){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 4" , null );
+        return res;
+    }
+
+    public Cursor getData4(){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 7" , null );
+        return res;
+    }
+
+
+
+
+    //Lấy tất cả truyện
     public Cursor getData2(){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_TRUYEN,null);
         return res;
+    }
+
+    //Lấy tất cả đánh giá
+    public Cursor getData3(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_DANH_GIA,null);
+        return res;
+    }
+
+
+    //Xóa truyện với id = i
+    public int Delete(int i){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        int res = db.delete("truyen",ID_TRUYEN+" = "+i,null);
+        return res;
+
     }
 
 }
