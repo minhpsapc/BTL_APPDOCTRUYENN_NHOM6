@@ -1745,11 +1745,29 @@ public class databasedoctruyen extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+    //Lấy tin mới nhất
+    public Cursor getData1(){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 4" , null );
+        return res;
+    }
+
+    public Cursor getData4(){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 7" , null );
+        return res;
+    }
+
     public Cursor getData2(){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_TRUYEN,null);
         return res;
     }
+<<<<<<< Updated upstream:app/src/main/java/com/example/APPDOCTRUYEN_NHOM6/database/databasedoctruyen.java
     //Lấy tin mới nhất
     public Cursor getData1(){
 
@@ -1765,5 +1783,24 @@ public class databasedoctruyen extends SQLiteOpenHelper {
         Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 7" , null );
         return res;
     }
+=======
+    //Lấy tất cả đánh giá
+    public Cursor getData3(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_DANH_GIA,null);
+        return res;
+    }
+
+
+    //Xóa truyện với id = i
+    public int Delete(int i){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        int res = db.delete("truyen",ID_TRUYEN+" = "+i,null);
+        return res;
+
+    }
+
+>>>>>>> Stashed changes:app/src/main/java/com/example/BTL_APPDOCTRUYENN_NHOM6/database/databasedoctruyen.java
 
 }
