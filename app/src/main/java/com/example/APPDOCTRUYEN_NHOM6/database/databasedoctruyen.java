@@ -14,7 +14,7 @@ import com.example.APPDOCTRUYEN_NHOM6.model.TaiKhoan;
 import com.example.APPDOCTRUYEN_NHOM6.model.Truyen;
 
 
-public class databasedoctruyen extends SQLiteOpenHelper {
+public class databasedoctruyen extends SQLiteOpenHelper{
 
     private static String DATABASE_NAME = "doctruyen";
     private static String TABLE_TAIKHOAN = "taikhoan";
@@ -36,32 +36,36 @@ public class databasedoctruyen extends SQLiteOpenHelper {
     private static String NOI_DUNG_DANH_GIA = "noidungdanhgia";
 
 
+
     private Context context;
 
-    private String SQLQuery = "CREATE TABLE " + TABLE_TAIKHOAN + " ( " + ID_TAI_KHOAN + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + TEN_TAI_KHOAN + " TEXT UNIQUE, "
-            + MAT_KHAU + " TEXT, "
-            + EMAIL + " TEXT, "
-            + PHAN_QUYEN + " INTEGER) ";
+    private String SQLQuery = "CREATE TABLE "+ TABLE_TAIKHOAN +" ( "+ID_TAI_KHOAN+" INTEGER PRIMARY KEY AUTOINCREMENT, "
+            +TEN_TAI_KHOAN+" TEXT UNIQUE, "
+            +MAT_KHAU+" TEXT, "
+            +EMAIL+" TEXT, "
+            + PHAN_QUYEN+" INTEGER) ";
 
-    private String SQLQuery1 = "CREATE TABLE " + TABLE_TRUYEN + " ( " + ID_TRUYEN + " integer primary key AUTOINCREMENT, "
-            + TEN_TRUYEN + " TEXT UNIQUE, "
-            + NOI_DUNG + " TEXT, "
-            + IMAGE + " TEXT, " + ID_TAI_KHOAN + " INTEGER , FOREIGN KEY ( " + ID_TAI_KHOAN + " ) REFERENCES " +
-            TABLE_TAIKHOAN + "(" + ID_TAI_KHOAN + "))";
+    private String SQLQuery1 = "CREATE TABLE "+ TABLE_TRUYEN +" ( "+ID_TRUYEN+" integer primary key AUTOINCREMENT, "
+            +TEN_TRUYEN+" TEXT UNIQUE, "
+            +NOI_DUNG+" TEXT, "
+            +IMAGE+" TEXT, "+ID_TAI_KHOAN+" INTEGER , FOREIGN KEY ( "+ ID_TAI_KHOAN +" ) REFERENCES "+
+            TABLE_TAIKHOAN+"("+ID_TAI_KHOAN+"))";
 
-    private String SQLQuery13 = "CREATE TABLE " + TABLE_DANH_GIA + " ( " + ID_DANH_GIA + " integer primary key AUTOINCREMENT, "
-            + NOI_DUNG_DANH_GIA + " TEXT, "
-            + TEN_TRUYEN + " TEXT, "
-            + TEN_TAI_KHOAN + " TEXT,"
-            + ID_TAI_KHOAN + " INTEGER , FOREIGN KEY ( " + ID_TAI_KHOAN + "," + TEN_TAI_KHOAN + " ) REFERENCES " +
-            TABLE_TAIKHOAN + "(" + ID_TAI_KHOAN + "," + TEN_TAI_KHOAN + "))";
+    private String SQLQuery13 = "CREATE TABLE "+ TABLE_DANH_GIA +" ( "+ID_DANH_GIA+" integer primary key AUTOINCREMENT, "
+            +NOI_DUNG_DANH_GIA+" TEXT, "
+            +TEN_TRUYEN+" TEXT, "
+            +TEN_TAI_KHOAN+" TEXT,"
+            +ID_TAI_KHOAN+" INTEGER , FOREIGN KEY ( "+ ID_TAI_KHOAN +","+TEN_TAI_KHOAN+" ) REFERENCES "+
+            TABLE_TAIKHOAN+"("+ID_TAI_KHOAN+","+TEN_TAI_KHOAN+"))";
+
 
 
     private String SQLQuery2 = "INSERT INTO TaiKhoan VAlUES (null,'minh','123','khuatquangminh@gmail.com',2)";
     private String SQLQuery3 = "INSERT INTO TaiKhoan VAlUES (null,'vanh','123','vanh@gmail.com',1)";
     private String SQLQuery11 = "INSERT INTO TaiKhoan VAlUES (null,'cong','123','cong@gmail.com',1)";
     private String SQLQuery12 = "INSERT INTO TaiKhoan VAlUES (null,'linh','123','linh@gmail.com',1)";
+
+
 
 
     private String SQLQuery4 = "INSERT INTO truyen VALUES (null,'Doraemon','Mùa đông đã đến rồi trời lạnh buốt, Doraemon không có gì để ăn cả. Doraemon mặc áo vào rồi ra ngoài kiếm thức ăn. Nó đi mãi đi mãi cuối cùng cũng tìm được hai củ cải trắng. Doraemon reo lên:\n" +
@@ -1685,7 +1689,6 @@ public class databasedoctruyen extends SQLiteOpenHelper {
             "\n" +
             "\n" +
             "Ý nghĩa câu chuyện: Có thể cậu bé chăn cừu không phải ngay sau đó sẽ trở nên khiêm tốn, học hỏi luôn được nhưng rõ ràng là cậu đã nhận ra người ta không thể sống lẻ loi được.','https://img.websosanh.vn/v2/users/root_product/images/kho-tang-truyen-co-tich-viet/acKSjqf6yTaF.jpg?compress=85',1)";
-
     @Override
     public void onCreate(SQLiteDatabase db) {
 
@@ -1739,12 +1742,68 @@ public class databasedoctruyen extends SQLiteOpenHelper {
         db.execSQL(SQLQuery04);
 
 
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+    public void AddTaiKhoan(TaiKhoan taiKhoan){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        //không thể lưu trực tiếp xuống insert nên thông qua contentvalues
+        ContentValues values = new ContentValues();
+        values.put(TEN_TAI_KHOAN,taiKhoan.getmTenTaiKhoan());
+        values.put(MAT_KHAU,taiKhoan.getmMatKhau());
+        values.put(EMAIL,taiKhoan.getmEmail());
+        values.put(PHAN_QUYEN,taiKhoan.getmPhanQuyen());
+
+        db.insert(TABLE_TAIKHOAN,null,values);
+        //đóng lại db cho an toàn
+        db.close();
+        //Log.e("Add Tai Khoan ","thành công");
+    }
+
+
+    //Lấy tất cả tài khoản
+    public Cursor getData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =  db.rawQuery( "select * from "+TABLE_TAIKHOAN , null );
+        return res;
+    }
+
+
+
+    //Thêm truyện
+    public void AddTruyen(Truyen truyen){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(TEN_TRUYEN,truyen.getTenTruyen());
+        values.put(NOI_DUNG,truyen.getNoiDung());
+        values.put(IMAGE,truyen.getAnh());
+        values.put(ID_TAI_KHOAN,truyen.getID_TK());
+
+        db.insert(TABLE_TRUYEN,null,values);
+        db.close();
+        Log.e("Add Truyện : ","Thành công");
+    }
+
+    //Thêm đánh giá
+    public void AddDanhGia(DanhGia danhgia){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(NOI_DUNG_DANH_GIA,danhgia.getNoiDungDanhGia());
+        // values.put(ID_TAI_KHOAN,danhgia.getIDTK());
+        values.put(TEN_TAI_KHOAN,danhgia.getTenTK());
+        values.put(TEN_TRUYEN, danhgia.getTenTruyen());
+        db.insert(TABLE_DANH_GIA,null,values);
+        db.close();
+        Log.e("Add đánh giá : ","Thành công");
+    }
+
+
+
     //Lấy tin mới nhất
     public Cursor getData1(){
 
@@ -1762,28 +1821,16 @@ public class databasedoctruyen extends SQLiteOpenHelper {
         return res;
     }
 
+
+
+
+    //Lấy tất cả truyện
     public Cursor getData2(){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_TRUYEN,null);
         return res;
     }
-<<<<<<< Updated upstream:app/src/main/java/com/example/APPDOCTRUYEN_NHOM6/database/databasedoctruyen.java
-    //Lấy tin mới nhất
-    public Cursor getData1(){
 
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 4" , null );
-        return res;
-    }
-    public Cursor getData4(){
-
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor res =  db.rawQuery( "select * from "+TABLE_TRUYEN+" ORDER BY "+ID_TRUYEN+" ASC LIMIT 7" , null );
-        return res;
-    }
-=======
     //Lấy tất cả đánh giá
     public Cursor getData3(){
         SQLiteDatabase db = this.getReadableDatabase();
@@ -1801,6 +1848,5 @@ public class databasedoctruyen extends SQLiteOpenHelper {
 
     }
 
->>>>>>> Stashed changes:app/src/main/java/com/example/BTL_APPDOCTRUYENN_NHOM6/database/databasedoctruyen.java
 
 }
