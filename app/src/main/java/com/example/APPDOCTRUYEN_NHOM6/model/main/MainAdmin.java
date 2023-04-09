@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.APPDOCTRUYEN_NHOM6.MainDangBai;
 import com.example.APPDOCTRUYEN_NHOM6.adapter.adapterTruyen;
 import com.example.APPDOCTRUYEN_NHOM6.database.databasedoctruyen;
 import com.example.APPDOCTRUYEN_NHOM6.model.Truyen;

@@ -758,54 +758,144 @@ public class databasedoctruyen extends SQLiteOpenHelper {
             "– Thôi anh ạ, ngồi thế nặng quá. Để vịt cõng từng người một.\n" +
             "\n" +
             "Vịt tốt bụng cõng làm hai chuyến. Đến bờ bên kia, hai anh em nhận dần ra đường lối trong rừng quen thuộc, và nhìn thấy nhà ở đằng xa. Chúng liền chạy ba chân bốn cẳng, nhảy bổ vào nhà, ôm ghì lấy cổ bố mẹ. Từ ngày bỏ con trong rừng, bố mẹ không lúc nào vui. Grêten dốc túi ngọc xuống đất và Hênxen thò tay vào túi lấy ra từng nắm ngọc. Từ đó, cả nhà hết lo và cùng nhau sống một cuộc đời hạnh phúc.','https://truyencotich.vn/wp-content/uploads/2012/10/Step-Brothers-Miranda-Dressler-2-660x440.jpeg',1)";
-    private String SQLQuery001 = "INSERT INTO truyen VALUES (null,' Demokurashi','Truyện được viết hoàn toàn bằng tiếng Nhật thông thường, có hán tự và phiên âm Hán tự sang Hiragana giúp bạn học dễ đọc và nắm bắt nội dung \n" +
+    private String SQLQuery001 = "INSERT INTO truyen VALUES (null,'Cậu bé và cây táo','Ngày xửa ngày xưa, có một cậu bé hàng ngày cậu rất thích đến chơi với một cây táo rất to. Cậu leo lên cây để hái trái ăn, ngủ những giấc trưa ngon lành dưới bóng râm của cây. Cậu rất yêu quý cây táo và ngược lại cây táo cũng rất quý mến cậu.\n" +
             "\n" +
+            "Thời gian cứ thế trôi đi rất nhanh, cậu bé giờ đã lớn và cậu không còn lui tới chơi với cây táo nữa. Rồi một ngày nọ, cậu đi tới chỗ cây táo với một nét mặt buồn rầu. Cây táo reo lên gọi cậu:\n" +
             "\n" +
-            "Một hôm, có một cậu bé chăn cừu ngồi nghỉ mát dưới gốc cây sau một ngày dài phơi mình dưới nắng cậu bé thấy người mệt mỏi và nóng bức. Một làn gió mơn man thổi thoa nhẹ lên tấm thân mỏi mệt của chú bé. Cậu bé bắt đầu thấy buồn ngủ. Vừa đặt mình xuống cậu bé bỗng ngước mắt nhìn lên những cành cây. Bấy giờ cậu bé bỗng thấy mình thật kiêu hãnh, cậu vẫn thường hay khoe với mọi người rằng cậu có tài chăn cừu và đàn cừu của cậu nhờ vậy mà lớn rất nhanh. Khi cậu bé phát hiện ra cây đa chỉ có những chùm quả rất nhỏ, nó bắt đầu thấy ngạc nhiên. Cậu bắt đầu chế giễu: hư, một cái cây to khỏe thế này mà làm sao chỉ có những bông hoa những chùm quả bé tí tẹo thế kia, mọi người vẫn bảo là cái cây này thông thái lắm kia mà nhưng làm sao nó có thể thông thái khi mà quả của nó chỉ toàn bé xíu như vậy. Dĩ nhiên là cây đa nghe hết những lời của cậu bé nhưng cây vẫn im lặng và cành lá chỉ khẽ rung rinh đủ để cho gió cất lên khúc hát ru êm dịu. Cậu bé bắt đầu ngủ, cậu ngáy o o…. Cốc.\n" +
-            "Quả đa nhỏ rụng chính giữa trán của cậu bé, nó bừng tỉnh nhưng càu nhàu: “Gừm… người ta vừa mới chợp mắt được có một tí”, rồi nó nhặt quả đa lên chưa hết chưa biết định làm gì với quả đa này bỗng nhiên cậu bé nghe thấy có tiếng cười khúc khích, cậu nghe thấy cây hỏi:\n" +
-            "– Có đau không ?.\n" +
-            "– Không nhưng mà làm người ta mất cả giấc ngủ .\n" +
-            "– Đó là bài học cho cậu bé to đầu đấy. Cậu chẳng vừa nhạo tôi là chỉ sinh ra toàn những quả nhỏ xíu là gì.\n" +
-            "– Tôi nhạo đấy tại sao người đời lại bảo bác là thông thái được nhỉ? Phá giấc ngủ trưa của người khác! Thế cũng là thông minh chắc!.\n" +
-            "Cây cười và nói: này này anh bạn anh hãy nghe đây những chiếc lá của tôi cho cậu bóng mát để cậu lấy chỗ nghỉ ngơi. Ừ thì cứ cho là quả của tôi nó bé đi chăng nữa nhưng chẳng lẽ cậu không thấy rằng tạo hóa hoạt động rất hoàn chỉnh đó sao. Cậu thử tưởng tượng xem, nếu quả của tôi to như quả dừa thì điều gì sẽ xảy ra khi nó rơi vào đầu cậu.\n" +
-            "Cậu bé im thin thít: ừ nhở. Cậu chưa hề nghĩ đến điều này bao giờ cả.\n" +
-            "Cây lại nhẹ nhàng tiếp lời:\n" +
-            "– Những người khiêm tốn có thể học hỏi rất nhiều điều từ việc quan sát những vật xung quanh đấy cậu bé ạ.\n" +
-            "– Vâng bác đa bác cứ nói tiếp đi.\n" +
-            "– Cậu hãy bắt đầu làm bạn với những gì ở quanh cậu. Chúng ta tất cả đều cần tới nhau. Cậu cứ nhìn bầy ong kia mà xem. Nhờ có ong mà hoa của tôi mới có thể trở thành quả. Thế còn bầy chim kia thì sao. Chúng làm tổ ngay giữa tán lá của tôi đây này. Những con chim bố mẹ kia phải làm việc vất vả cả ngày để bắt sâu nuôi con và cậu có biết việc làm đó có ý nghĩa gì với tôi không?.\n" +
-            "– Không, có ý nghĩa gì vậy hả bác?.\n" +
-            "– Sâu ăn lá chính vậy loài chim kia chính là những người bạn của tôi. Chúng còn giúp cả cậu nữa đấy, sở dĩ cừu của cậu có đủ lá và cỏ để ăn là vì chim chóc đã tiêu diệt hết các loài côn trùng và sâu bọ. Và chưa hết đâu cậu bé ạ!.\n" +
-            "– Còn gì thế nữa hả bác đa.\n" +
-            "– Cậu hãy nhìn xuống chân mình mà xem, những chiếc lá rụng tạo thành lớp thảm mục, những con sâu đào đất ngoi lên để ăn lá, chúng đào đất thành những lỗ nhỏ, nhờ đó không khí có thể vào được trong đất. Có không khí trong đất nên bộ rễ của tôi mới khỏe thế nào đấy. Rễ khỏe nên tôi cũng khỏe hơn. Nào thế bây giờ cậu trẻ đã hiểu chưa?.\n" +
-            "– Cháu hiểu rồi thưa bác. Bác tha lỗi cho cháu nhé vì đã cười nhạo bác bác đa ạ.\n" +
-            "– Không sao bây giờ cháu hãy ra dắt cừu về đi.\n" +
+            "– Hãy tới chơi với ta.\n" +
             "\n" +
+            "Cậu bé đáp:\n" +
             "\n" +
-            "Ý nghĩa câu chuyện: Có thể cậu bé chăn cừu không phải ngay sau đó sẽ trở nên khiêm tốn, học hỏi luôn được nhưng rõ ràng là cậu đã nhận ra người ta không thể sống lẻ loi được.','https://giaotrinhtiengnhat.com/wp-content/uploads/2016/07/Taisho-demokurashi.jpg',1)";
-    private String SQLQuery002 = "INSERT INTO truyen VALUES (null,' NO Name','Chap 1 Kiếp này gặp lại chàng của kiếp trước thông thường, có hán tự và phiên âm Hán tự sang Hiragana giúp bạn học dễ đọc và nắm bắt nội dung \n" +
+            "– Cháu giờ đã lớn rồi, không còn là đứa trẻ năm xưa nữa, cháu chẳng thích chơi dưới gốc cây nữa. Cháu giờ chỉ thích chơi đồ chơi và hiện giờ cháu đang cần tiền để mua chúng.\n" +
             "\n" +
+            "Cây táo nói với cậu bé:\n" +
             "\n" +
-            "Một hôm, có một cậu bé chăn cừu ngồi nghỉ mát dưới gốc cây sau một ngày dài phơi mình dưới nắng cậu bé thấy người mệt mỏi và nóng bức. Một làn gió mơn man thổi thoa nhẹ lên tấm thân mỏi mệt của chú bé. Cậu bé bắt đầu thấy buồn ngủ. Vừa đặt mình xuống cậu bé bỗng ngước mắt nhìn lên những cành cây. Bấy giờ cậu bé bỗng thấy mình thật kiêu hãnh, cậu vẫn thường hay khoe với mọi người rằng cậu có tài chăn cừu và đàn cừu của cậu nhờ vậy mà lớn rất nhanh. Khi cậu bé phát hiện ra cây đa chỉ có những chùm quả rất nhỏ, nó bắt đầu thấy ngạc nhiên. Cậu bắt đầu chế giễu: hư, một cái cây to khỏe thế này mà làm sao chỉ có những bông hoa những chùm quả bé tí tẹo thế kia, mọi người vẫn bảo là cái cây này thông thái lắm kia mà nhưng làm sao nó có thể thông thái khi mà quả của nó chỉ toàn bé xíu như vậy. Dĩ nhiên là cây đa nghe hết những lời của cậu bé nhưng cây vẫn im lặng và cành lá chỉ khẽ rung rinh đủ để cho gió cất lên khúc hát ru êm dịu. Cậu bé bắt đầu ngủ, cậu ngáy o o…. Cốc.\n" +
-            "Quả đa nhỏ rụng chính giữa trán của cậu bé, nó bừng tỉnh nhưng càu nhàu: “Gừm… người ta vừa mới chợp mắt được có một tí”, rồi nó nhặt quả đa lên chưa hết chưa biết định làm gì với quả đa này bỗng nhiên cậu bé nghe thấy có tiếng cười khúc khích, cậu nghe thấy cây hỏi:\n" +
-            "– Có đau không ?.\n" +
-            "– Không nhưng mà làm người ta mất cả giấc ngủ .\n" +
-            "– Đó là bài học cho cậu bé to đầu đấy. Cậu chẳng vừa nhạo tôi là chỉ sinh ra toàn những quả nhỏ xíu là gì.\n" +
-            "– Tôi nhạo đấy tại sao người đời lại bảo bác là thông thái được nhỉ? Phá giấc ngủ trưa của người khác! Thế cũng là thông minh chắc!.\n" +
-            "Cây cười và nói: này này anh bạn anh hãy nghe đây những chiếc lá của tôi cho cậu bóng mát để cậu lấy chỗ nghỉ ngơi. Ừ thì cứ cho là quả của tôi nó bé đi chăng nữa nhưng chẳng lẽ cậu không thấy rằng tạo hóa hoạt động rất hoàn chỉnh đó sao. Cậu thử tưởng tượng xem, nếu quả của tôi to như quả dừa thì điều gì sẽ xảy ra khi nó rơi vào đầu cậu.\n" +
-            "Cậu bé im thin thít: ừ nhở. Cậu chưa hề nghĩ đến điều này bao giờ cả.\n" +
-            "Cây lại nhẹ nhàng tiếp lời:\n" +
-            "– Những người khiêm tốn có thể học hỏi rất nhiều điều từ việc quan sát những vật xung quanh đấy cậu bé ạ.\n" +
-            "– Vâng bác đa bác cứ nói tiếp đi.\n" +
-            "– Cậu hãy bắt đầu làm bạn với những gì ở quanh cậu. Chúng ta tất cả đều cần tới nhau. Cậu cứ nhìn bầy ong kia mà xem. Nhờ có ong mà hoa của tôi mới có thể trở thành quả. Thế còn bầy chim kia thì sao. Chúng làm tổ ngay giữa tán lá của tôi đây này. Những con chim bố mẹ kia phải làm việc vất vả cả ngày để bắt sâu nuôi con và cậu có biết việc làm đó có ý nghĩa gì với tôi không?.\n" +
-            "– Không, có ý nghĩa gì vậy hả bác?.\n" +
-            "– Sâu ăn lá chính vậy loài chim kia chính là những người bạn của tôi. Chúng còn giúp cả cậu nữa đấy, sở dĩ cừu của cậu có đủ lá và cỏ để ăn là vì chim chóc đã tiêu diệt hết các loài côn trùng và sâu bọ. Và chưa hết đâu cậu bé ạ!.\n" +
-            "– Còn gì thế nữa hả bác đa.\n" +
-            "– Cậu hãy nhìn xuống chân mình mà xem, những chiếc lá rụng tạo thành lớp thảm mục, những con sâu đào đất ngoi lên để ăn lá, chúng đào đất thành những lỗ nhỏ, nhờ đó không khí có thể vào được trong đất. Có không khí trong đất nên bộ rễ của tôi mới khỏe thế nào đấy. Rễ khỏe nên tôi cũng khỏe hơn. Nào thế bây giờ cậu trẻ đã hiểu chưa?.\n" +
-            "– Cháu hiểu rồi thưa bác. Bác tha lỗi cho cháu nhé vì đã cười nhạo bác bác đa ạ.\n" +
-            "– Không sao bây giờ cháu hãy ra dắt cừu về đi.\n" +
+            "– Rất tiếc ta chỉ có những trái táo ngọt, ta không có tiền. Nhưng cậu có thể hái những trái táo chín mọng của ta đem đi bán đổi lấy tiền mua đồ chơi.\n" +
             "\n" +
+            "Cậu bé mừng rỡ, cậu trèo lên cây hái toàn bộ số táo trên cây và sung sướng đem đi bán. Cây táo rất buồn bã vì kể từ hôm đó không thấy cậu bé quay trở lại.\n" +
             "\n" +
-            "Ý nghĩa câu chuyện: Có thể cậu bé chăn cừu không phải ngay sau đó sẽ trở nên khiêm tốn, học hỏi luôn được nhưng rõ ràng là cậu đã nhận ra người ta không thể sống lẻ loi được.','https://giaotrinhtiengnhat.com/wp-content/uploads/2016/07/Taisho-demokurashi.jpg',1)";
+            "Một hôm, cậu bé – giờ đã lớn thành một chàng trai, cậu trở lại và cây táo thấy rất vui mừng khi nhìn thấy cậu. Cây nói:\n" +
+            "\n" +
+            "– Hãy tới chơi với ta\n" +
+            "\n" +
+            "Cậu đáp:\n" +
+            "\n" +
+            "– Cháu giờ không có thời gian đâu để vui chơi. Cháu còn phải làm việc để kiếm tiền nuôi sống gia đình cháu. Gia đình cháu hiện giờ đang rất cần một ngôi nhà nhỏ để trú ngụ. Bác có gì để giúp đỡ cháu không?\n" +
+            "\n" +
+            "Câu táo nói với cậu:\n" +
+            "\n" +
+            "– Ta xin lỗi cháu, ta thì không có tiền mà cũng chẳng có nhà. Nhưng cháu có thể chặt cành của ta để dựng nhà.\n" +
+            "\n" +
+            "Thế là chàng trai cầm rìu tới chặt hết cành trên cây táo. Cậu vui vẻ trở gỗ về dựng nhà và cũng kể từ hôm đó cây táo lại không thấy cậu quay trở lại nữa, cây táo rất buồn.\n" +
+            "\n" +
+            "Một ngày hè oi bức và nóng nực, chàng trai – giờ đây đã cao tuổi – quay lại chỗ cây táo. Cây táo thấy chàng trai mừng rỡ gọi:\n" +
+            "\n" +
+            "– Hãy tới chơi với ta\n" +
+            "\n" +
+            "Chàng trai ủ rũ nói với cây táo:\n" +
+            "\n" +
+            "– Cháu cảm thấy rất buồn vì càng ngày cháu càng già đi. Cháu muốn được chèo thuyền để thư giãn một mình. Bác có thể giúp gì được cho cháu?\n" +
+            "\n" +
+            "Cây táo đáp:\n" +
+            "\n" +
+            "– Ta thì không có thuyền, nhưng cậu có thể dùng thân cây của ta đóng lấy một chiếc thuyền để một mình chèo thuyền ra xa. Được thư giãn nghỉ ngơi trên thuyền một mình giữa sông nước chắc cậu sẽ thấy nhẹ nhõm và thanh thản hơn.\n" +
+            "\n" +
+            "Chàng trai chặt cây táo để làm thành một chiếc thuyền. Cậu chèo thuyền lênh đênh giữa sông để nghỉ ngơi thư thái.\n" +
+            "\n" +
+            "Nhiều năm sau, cậu quay lại chỗ cây táo. Thấy cậu tới cây táo nói:\n" +
+            "\n" +
+            "– Xin lỗi con trai của ta, giờ đây ta không còn gì để giúp con nữa rồi. Ta giờ chỉ là một cái gốc, không có thân cũng chẳng có táo. Ta thật sự không giúp được gì cho cậu nữa, cái còn lại duy nhất của ta là bộ rễ đang chết dần chết mòn – Cây táo nói với cậu, những giọt nước mắt rưng rưng chảy xuống.\n" +
+            "\n" +
+            "Cậu bé đáp:\n" +
+            "\n" +
+            "– Giờ đây cháu cũng đã già, cháu không còn đủ sức để leo trèo nữa, cũng không còn răng để mà ăn táo. Cháu chỉ cần một chỗ để ngồi nghỉ, vì cháu đã quá mệt mỏi với những năm tháng vất vả đã qua.\n" +
+            "\n" +
+            "Cây táo nói với cậu:\n" +
+            "\n" +
+            "– Ôi, vậy cái gốc cây già cỗi này của ta là một nơi rất tốt cho cậu dựa vào và nghỉ ngơi. Hãy tới đây với ta.\n" +
+            "\n" +
+            "Chàng trai ngồi xuống gốc gây già cỗi, cây táo mừng rơi nước mắt.\n" +
+            "\n" +
+            "Đây chính là cậu chuyện của tất cả chúng ta. Hình ảnh cây táo trong truyện chính là hình ảnh của cha mẹ. Khi chúng ta còn nhỏ, ta được cha mẹ yêu thương che trở. Khi chúng ta lớn lên, ta bỏ cha mẹ mà đi và chỉ quay trở về khi cần sự giúp đỡ của cha mẹ. Nhưng lúc nào cũng vậy, vòng tay của cha mẹ luôn sẵn sàng ôm chúng ta vào lòng nâng đỡ hy sinh tất cả để cho ta được hạnh phúc nhất.','https://truyencotich.vn/wp-content/uploads/2015/09/c%E1%BA%ADu-b%C3%A9-v%C3%A0-c%C3%A2y-t%C3%A1o-640x440.jpg',1)";
+    private String SQLQuery002 = "INSERT INTO truyen VALUES (null,'Mười hai người thợ săn','Ngày xưa có một vị Hoàng tử yêu vợ chưa cưới tha thiết. Một hôm, chàng đang ngồi bên nàng rất đỗi sung sướng thì nhận được tin cha ốm sắp chết muốn gặp mặt chàng trước khi nhắm mắt. Chàng liền bảo người yêu:\n" +
+            "\n" +
+            "– Anh phải từ biệt em đi ngay. Anh tặng em chiếc nhẫn này làm kỷ niệm. Mai sau anh lên ngôi vua rồi, anh sẽ trở lại đón em.\n" +
+            "\n" +
+            "Chàng lên ngựa ra đi. Khi chàng về gặp vua cha thì vua ốm thập tử nhất sinh sắp chết đến nơi. Vua cha phán:\n" +
+            "\n" +
+            "– Con yêu dấu ạ. Cha muốn nhìn mặt con một lần cuối cùng trước khi chết. Con phải hứa với cha là sau khi cha chết đi, con sẽ lấy vợ theo ý muốn của cha.\n" +
+            "\n" +
+            "Rồi vua cho chàng biết tên một nàng công chúa mà chàng phải lấy làm vợ. Trong lúc choáng váng cả người, Hoàng tử không suy nghĩ gì, chỉ thưa:\n" +
+            "\n" +
+            "– Thưa cha, con sẽ làm theo như ý cha.\n" +
+            "\n" +
+            "Nhà vua, nhắm mắt từ trần. Hoàng tử lên ngôi vua. Hết thời gian tang lễ chàng phải giữ lời\n" +
+            "hứa với cha cho đi hỏi nàng công chúa ấy và được nàng nhận lời. Người vợ chưa cưới đầu tiên của chàng được tin đó buồn bao vì bị phụ tình ốm suýt chết. Cha nàng liền hỏi nàng:\n" +
+            "\n" +
+            "– Con yêu dấu, làm sao con buồn rầu thế? Con ước muốn gì, cha cũng cho.\n" +
+            "\n" +
+            "Nàng nghĩ một lúc rồi nói:\n" +
+            "\n" +
+            "– Thưa cha, con mong ước có mười một thiếu nữ từ mặt mũi, hình dáng, vóc người đều giống con y hệt.\n" +
+            "\n" +
+            "Vua cha nói:\n" +
+            "\n" +
+            "– Nếu là điều có thể làm được thì điều ước của con nhất định sẽ thành sự thật.\n" +
+            "\n" +
+            "Vua sai người đi tìm trong khắp nước kỳ cho đến khi được đủ mười một thiếu nữ giống con gái mình y hệt, từ mặt mũi hình dáng, đến khổ người. Khi các thiếu nữ có đến trước công chúa, nàng cho may mười hai bộ quần áo đi săn y hệt nhau, cho mười một cô mặc vào, chính nàng cũng mặc một bộ. Sau đó, nàng từ biệt vua cha, cùng họ lên ngựa đi đến triều đình của người chồng chưa cưới cũ mà nàng đã yêu tha thiết. Nàng đến hỏi xem nhà vua có cần thợ săn và có muốn mượn cả mười hai người không? Vua nhìn nàng nhưng không nhận ra được. Vua thấy họ đẹp quá nên đồng ý mượn cả. Thế là họ thành mười hai người thợ săn của nhà vua.\n" +
+            "\n" +
+            "Nhà vua vốn có một con sư tử. Đó là con vật kỳ lạ biết hết mọi điều bí ẩn. Một buổi tối nó nói với nhà vua:\n" +
+            "\n" +
+            "– Bệ hạ đinh ninh là có mười hai người thợ săn phải không?\n" +
+            "\n" +
+            "Vua bảo:\n" +
+            "\n" +
+            "– Đúng, đó là mười hai người thợ săn.\n" +
+            "\n" +
+            "Sư tử lại nói tiếp:\n" +
+            "\n" +
+            "– Bệ hạ lầm rồi, đó là mười hai thiếu nữ đấy.\n" +
+            "\n" +
+            "Vua đáp:\n" +
+            "\n" +
+            "– Nhất định không đúng. Người làm thế nào chứng minh được việc ấy!\n" +
+            "\n" +
+            "Sư tử đáp:\n" +
+            "\n" +
+            "– Ồ dễ thôi, bệ hạ chỉ việc rải đỗ vào phòng thì biết ngay. Đàn ông bước mạnh nên khi giẫm lên đỗ thì không hạt nào động đậy, nhưng phụ nữ bước thì thoăn thoắt lại hay xoay chân, hạt đỗ sẽ lăn đi.\n" +
+            "\n" +
+            "Vua khen là kế hay, cho rắc hạt đỗ. Nhưng có người hầu nhà vua có lòng tốt đối với những người thợ săn, nghe thấy nói nhà vua nhất định thử họ, liều đi kể cho biết hết và bảo:\n" +
+            "\n" +
+            "– Sư tử nó muốn mách nhà vua rằng các người là gái cả đấy.\n" +
+            "\n" +
+            "Công chúa cảm ơn bác ta rồi bảo các cô thiếu nữ:\n" +
+            "\n" +
+            "– Các em cố sức giẫm mạnh lên các hạt đỗ nhé.\n" +
+            "\n" +
+            "Sáng hôm sau nhà vua truyền mười hai người thợ săn đến phòng có rải hạt đỗ. Các cô thiếu nữ cố giẫm thật mạnh, bước đi của họ khỏe và chắc đến nỗi không một hạt đỗ nào lăn hoặc chuyển động, sau khi họ đi khỏi, nhà vua bảo sư tử:\n" +
+            "\n" +
+            "– Mày đánh lừa tao rồi, chúng đi chắc bước, đó là đàn ông.\n" +
+            "\n" +
+            "Sư tử đáp:\n" +
+            "\n" +
+            "– Vì biết là bị thử thách nên họ đã gắng đi cho chắc bước. Bệ hạ cứ để mười hai chiếc guồng kéo kéo sợi vào phòng, họ sẽ mừng rỡ và xán lại ngay, đàn ông thì không bao giờ thế.\n" +
+            "\n" +
+            "Nhà vua cho là kế hay, bèn sai để guồng kéo sợi vào phòng. Nhưng người hầu vốn thật thà với những người thợ săn, đến nói lộ cho họ biết hết mưu kế. Công chúa bảo riêng mười một thiếu\n" +
+            "nữ: “Các em cố nhịn đừng có ngó tới guồng kéo sợi nhé”.\n" +
+            "\n" +
+            "Sáng hôm sau vua cho triệu mười hai người thợ săn đến, họ vào phòng không chú ý gì đến guồng sợi. Vua lại bảo sư tử:\n" +
+            "\n" +
+            "– Mày đánh lừa tao. Đúng là đàn ông rồi, vì chúng không nhìn gì đến guồng kéo sợi.\n" +
+            "\n" +
+            "Sư tử đáp:\n" +
+            "\n" +
+            "– Họ biết là bị thử thách nên cố nhịn đấy.\n" +
+            "\n" +
+            "Nhưng vua nhất định không tin sư tử nữa. Ngày nào mười hai người thợ săn cũng theo vua đi săn, càng ngày vua càng yêu quí họ. Một hôm trong khi họ đi săn, thì được tin vợ chưa cưới của nhà vua sắp tới. Người vợ chưa cưới chính thức nghe vậy đau khổ quá. Tim bị nhói lên ngã lăn xuống đất bất tỉnh nhân sự. Vua tưởng là người thợ săn yêu quí của mình bị làm sao vội chạy lại cứu. Vua lại tháo bao tay ấy thì thấy chiếc nhẫn mình đã tặng cho người vợ chưa cưới thứ nhất. Vua nhìn mặt nhận ra nàng. Lòng vua hồi hộp, vua hôn nàng lúc nàng mở mắt, vua bảo:\n" +
+            "\n" +
+            "– Em là của anh, anh là của em. Thiên hạ không ai thay đổi được điều ấy.\n" +
+            "\n" +
+            "Vua phái sứ giả đến gặp người vợ chưa cưới kia xin nàng quay về nước vì vua đã có vợ rồi. Ai đã tìm thấy chiếc chìa khóa cũ thì không cần đến chiếc mới nữa. Sau đó hôn lễ được cử hành. Sư tử được tha tội, vì quả là nó nói đúng sự thật.','https://truyencotich.vn/wp-content/uploads/2012/10/Peter-Pan-Wallpaper-classic-disney-7089871-1024-768-660x440.jpg',1)";
     private String SQLQuery003 = "INSERT INTO truyen VALUES (null,'Sự tích mặt trăng','Đất nước này có từ hồi mới khai thiên lập địa, ở đây ban đêm trời tối đen như mực, vì chẳng có trăng, sao chiếu sáng, bầu trời như một tấm thảm đen bao trùm khắp đất nước.\n" +
             "Một ngày kia có bốn chàng trai ở đất nước này rủ nhau đi chu du thiên hạ, họ tới một vương quốc khác, ở đây, sau khi mặt trời khuất núi thì thấy xuất hiện một quả cầu sáng dịu treo trên một cây sồi cổ đại. Ánh sáng tỏa chiếu khắp đất nước. Tuy không chói chang như ánh sáng mặt trời, nhưng dưới ánh sáng dịu ấy người ta cũng có thể nom rõ và phân biệt mọi vật.\n" +
             "Mấy khách bộ hành dừng chân đứng ngắm, họ hỏi một người nông dân đánh xe ngựa đi ngang, vật sáng đó là cái gì. Người kia đáp:\n" +
@@ -823,30 +913,90 @@ public class databasedoctruyen extends SQLiteOpenHelper {
             " Nhưng rồi cùng với năm tháng, họ trở nên già nua. Khi người thứ nhất ốm, biết mình không qua khỏi nên căn dặn mọi người mình muốn lấy một phần tư mặt trăng đem theo xuống chín suối. Sau khi người này chết, trưởng thôn trèo lên cây, lấy chiếc kéo tỉa cây cắt lấy một phần tư mặt trăng, đặt nó vào trong quan tài của người quá cố. Ánh trăng tuy không sáng như trước nhưng ít người nhận thấy điều đó. Khi người thứ hai qua đời, một phần tư khác cũng được cắt chia cho người đó. Ánh trăng không còn sáng tỏ nữa. Nhưng khi người thứ ba chết, một phần tư nữa lại bị cắt chôn theo cùng, giờ đây ánh trăng mờ ảo. Đến khi người thứ tư xuống mồ thì phần tư cuối cùng cũng được lấy xuống chôn cùng người quá cố. Giờ đây ban đêm lại tối đen như mực như khi trước kia. Mỗi khi đi đêm mọi người lại phải mang theo đèn nếu không thì lại cụng đầu vào nhau.\n" +
             "Ở dưới địa ngục lúc nào cũng tối tăm, bốn mảnh trăng kia được ghép lại thành một quả cầu sáng. Ánh trăng không chói chang như mặt trời, mà là ánh sáng dịu nên rất hợp với những cặp mắt của những người ở dưới địa ngục, họ động đậy, rồi thức tỉnh khỏi cơn ngủ triền miên. Họ vươn vai đứng dậy, trở nên vui tính và lại tiếp tục những nhịp điệu sống cũ của mình. Một số lại đi cờ bạc, nhảy múa, số khác lại đến các quán rượu vòi rượu uống, khi đã ngà ngà say thì bắt đầu cãi lộn làm huyên náo cả vùng, tiếp đến là rút gậy ăn mày ra đánh nhau. Tiếng huyên náo bởi cãi nhau và đánh lộn ngày càng to và vang xa, nó vang lên đến tận thiên đình.\n" +
             "Thánh Pétrus có nhiệm vụ canh giữ cổng trời nghe thấy huyên náo nghĩ rằng dưới địa ngục có nổi loạn. Thánh thổi tù và báo động tập hợp quân lính phòng khi quân ô hợp dưới địa ngục kéo lên thì đánh đuổi chúng xuống. Đợi mãi nhưng không thấy chúng kéo lên. Thánh Pétrus lên ngựa và phóng qua cửa trời xuống dưới địa ngục. Thánh dẹp yên và ra lệnh ai về mộ người ấy. Dẹp xong, thánh lấy mặt trăng đem theo về trời. Vì vậy mặt trăng treo trên trời như ngày nay chúng ta thấy.','https://truyencotich.vn/wp-content/uploads/2015/01/anh-dep-hoat-hinh-vui-nhon-mat-trang-660x440.jpg',1)";
-    private String SQLQuery004 = "INSERT INTO truyen VALUES (null,'Cưng Chiều Vợ Yêu','Phòng lửa, phòng trộm, phòng bạn thân. Vậy mà Lịch Tiêm Lạc lại gặp phải chuyện máu chó này. Lấy chồng ngoài ý muốn, chồng lại là một cực phẩm sủng thê cuồng, tổng tài phu nhân tiến giai công lược, dạy em phục thù bạn trai cũ, vả mặt bạn thân\n" +
+    private String SQLQuery004 = "INSERT INTO truyen VALUES (null,'Con ngỗng vàng','Xưa có một người có ba con. Con thứ ba tên là chàng Ngốc thường bị khinh rẻ chế giễu và làm việc gì cũng bị gạt ra. Một hôm, con cả muốn vào rừng đốn củi. Trước khi anh ta đi, người mẹ cho anh ta một chiếc bánh trứng ngon lành và một chai rượu vang để mang theo ăn uống. Anh vào rừng gặp một ông lão nhỏ bé, tóc hoa râm, chào anh và nói:\n" +
             "\n" +
+            "– Cho lão xin miếng bánh ở trong bị anh và một ngụm rượu vang. Lão vừa đói vừa khát đây. \n" +
             "\n" +
-            "Một hôm, có một cậu bé chăn cừu ngồi nghỉ mát dưới gốc cây sau một ngày dài phơi mình dưới nắng cậu bé thấy người mệt mỏi và nóng bức. Một làn gió mơn man thổi thoa nhẹ lên tấm thân mỏi mệt của chú bé. Cậu bé bắt đầu thấy buồn ngủ. Vừa đặt mình xuống cậu bé bỗng ngước mắt nhìn lên những cành cây. Bấy giờ cậu bé bỗng thấy mình thật kiêu hãnh, cậu vẫn thường hay khoe với mọi người rằng cậu có tài chăn cừu và đàn cừu của cậu nhờ vậy mà lớn rất nhanh. Khi cậu bé phát hiện ra cây đa chỉ có những chùm quả rất nhỏ, nó bắt đầu thấy ngạc nhiên. Cậu bắt đầu chế giễu: hư, một cái cây to khỏe thế này mà làm sao chỉ có những bông hoa những chùm quả bé tí tẹo thế kia, mọi người vẫn bảo là cái cây này thông thái lắm kia mà nhưng làm sao nó có thể thông thái khi mà quả của nó chỉ toàn bé xíu như vậy. Dĩ nhiên là cây đa nghe hết những lời của cậu bé nhưng cây vẫn im lặng và cành lá chỉ khẽ rung rinh đủ để cho gió cất lên khúc hát ru êm dịu. Cậu bé bắt đầu ngủ, cậu ngáy o o…. Cốc.\n" +
-            "Quả đa nhỏ rụng chính giữa trán của cậu bé, nó bừng tỉnh nhưng càu nhàu: “Gừm… người ta vừa mới chợp mắt được có một tí”, rồi nó nhặt quả đa lên chưa hết chưa biết định làm gì với quả đa này bỗng nhiên cậu bé nghe thấy có tiếng cười khúc khích, cậu nghe thấy cây hỏi:\n" +
-            "– Có đau không ?.\n" +
-            "– Không nhưng mà làm người ta mất cả giấc ngủ .\n" +
-            "– Đó là bài học cho cậu bé to đầu đấy. Cậu chẳng vừa nhạo tôi là chỉ sinh ra toàn những quả nhỏ xíu là gì.\n" +
-            "– Tôi nhạo đấy tại sao người đời lại bảo bác là thông thái được nhỉ? Phá giấc ngủ trưa của người khác! Thế cũng là thông minh chắc!.\n" +
-            "Cây cười và nói: này này anh bạn anh hãy nghe đây những chiếc lá của tôi cho cậu bóng mát để cậu lấy chỗ nghỉ ngơi. Ừ thì cứ cho là quả của tôi nó bé đi chăng nữa nhưng chẳng lẽ cậu không thấy rằng tạo hóa hoạt động rất hoàn chỉnh đó sao. Cậu thử tưởng tượng xem, nếu quả của tôi to như quả dừa thì điều gì sẽ xảy ra khi nó rơi vào đầu cậu.\n" +
-            "Cậu bé im thin thít: ừ nhở. Cậu chưa hề nghĩ đến điều này bao giờ cả.\n" +
-            "Cây lại nhẹ nhàng tiếp lời:\n" +
-            "– Những người khiêm tốn có thể học hỏi rất nhiều điều từ việc quan sát những vật xung quanh đấy cậu bé ạ.\n" +
-            "– Vâng bác đa bác cứ nói tiếp đi.\n" +
-            "– Cậu hãy bắt đầu làm bạn với những gì ở quanh cậu. Chúng ta tất cả đều cần tới nhau. Cậu cứ nhìn bầy ong kia mà xem. Nhờ có ong mà hoa của tôi mới có thể trở thành quả. Thế còn bầy chim kia thì sao. Chúng làm tổ ngay giữa tán lá của tôi đây này. Những con chim bố mẹ kia phải làm việc vất vả cả ngày để bắt sâu nuôi con và cậu có biết việc làm đó có ý nghĩa gì với tôi không?.\n" +
-            "– Không, có ý nghĩa gì vậy hả bác?.\n" +
-            "– Sâu ăn lá chính vậy loài chim kia chính là những người bạn của tôi. Chúng còn giúp cả cậu nữa đấy, sở dĩ cừu của cậu có đủ lá và cỏ để ăn là vì chim chóc đã tiêu diệt hết các loài côn trùng và sâu bọ. Và chưa hết đâu cậu bé ạ!.\n" +
-            "– Còn gì thế nữa hả bác đa.\n" +
-            "– Cậu hãy nhìn xuống chân mình mà xem, những chiếc lá rụng tạo thành lớp thảm mục, những con sâu đào đất ngoi lên để ăn lá, chúng đào đất thành những lỗ nhỏ, nhờ đó không khí có thể vào được trong đất. Có không khí trong đất nên bộ rễ của tôi mới khỏe thế nào đấy. Rễ khỏe nên tôi cũng khỏe hơn. Nào thế bây giờ cậu trẻ đã hiểu chưa?.\n" +
-            "– Cháu hiểu rồi thưa bác. Bác tha lỗi cho cháu nhé vì đã cười nhạo bác bác đa ạ.\n" +
-            "– Không sao bây giờ cháu hãy ra dắt cừu về đi.\n" +
+            "Anh chàng khôn ngoan đáp:\n" +
             "\n" +
+            "– Nếu tôi cho lão bánh và rượu thì tôi chẳng còn gì! Thôi lão xéo đi!\n" +
             "\n" +
-            "Ý nghĩa câu chuyện: Có thể cậu bé chăn cừu không phải ngay sau đó sẽ trở nên khiêm tốn, học hỏi luôn được nhưng rõ ràng là cậu đã nhận ra người ta không thể sống lẻ loi được.','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYgkuICYrSAdmW4NAqun8BBHohAnznwQEi4MO5pQp6hKtM4pNMzzZPdm63qCpm20MfsM&usqp=CAU',1)";
+            "Rồi anh để kệ ông lão ở đấy mà đi. Anh đẵn cây được một lát thì trượt tay, rìu chém vào cánh tay, phải về nhà băng bó. Tai nạn ấy chính do ông lão bé nhỏ gây ra. Sau đó, người con thứ hai đi rừng. Người mẹ cũng cho một chiếc bánh trứng và một chai rượu vang y như với con cả. Ông lão bé nhỏ cũng đến xin anh miếng bánh và ngụm rượu. Người con thứ hai cũng rất khôn:\n" +
+            "\n" +
+            "– Tôi cho lão cái gì là tôi thiệt cái ấy. Thôi lão xéo đi!\n" +
+            "\n" +
+            "Rồi anh để kệ ông lão ở đấy mà đi. Anh cũng bị trừng phạt ngay: anh mới chặt cây được vài nhát thì chặt ngay vào chân, phải lê về nhà.\n" +
+            "\n" +
+            "Chàng Ngốc liền nói:\n" +
+            "\n" +
+            "– Thưa bố, bố để cho con đi đốn củi một lần.\n" +
+            "\n" +
+            "Bố đáp:\n" +
+            "\n" +
+            "– Thôi! Hai anh mày bị thương. Mày đốn củi thế nào được!\n" +
+            "\n" +
+            "Chàng Ngốc xin mãi, cuối cùng bố đành bảo:\n" +
+            "\n" +
+            "– Thôi thì mày cứ đi đi. Có vấp thì mới sáng mắt ra.\n" +
+            "\n" +
+            "Mẹ cho một chiếc bánh luộc ủ tro và một chai bia chua. Anh vào rừng thì cũng gặp một ông lão bé nhỏ tóc hoa râm, chào anh rồi bảo:\n" +
+            "\n" +
+            "– Cho lão xin một miếng bánh và một ngụm rượu, lão vừa đói vừa khát đây.\n" +
+            "\n" +
+            "Chàng Ngốc đáp:\n" +
+            "\n" +
+            "– Cháu chỉ có bánh ủ tro và bia chua thôi. Nếu cụ thấy tạm được, thì ông cháu ta ngồi xuống cùng đánh chén.\n" +
+            "\n" +
+            "Họ ngồi xuống. Chàng Ngốc rút bánh ủ tro ra thì thấy đó là một chiếc bánh trứng ngon lành; bia chua đã biến thành rượu vang ngon. Ăn uống xong, ông lão bảo:\n" +
+            "\n" +
+            "– Cháu tốt bụng, sẵn sàng chia của mình cho người khác. Để lão ban phúc cho. Chỗ kia có cây cổ thụ, cháu đẵn xuống sẽ thấy trong đám rễ cây có của quí.\n" +
+            "\n" +
+            "Nói xong ông lão từ biệt lên đường.\n" +
+            "\n" +
+            "Chàng Ngốc đi đẵn cây. Hạ cây xuống thì thấy trong đám rễ có một con ngỗng lông bằng vàng thật. Anh nhấc ngỗng lên ẵm vào một quán trọ để ngủ đêm. Chủ quán có ba con gái. Ba cô thấy ngỗng, tò mò không biết là chim gì mà lạ thế, chỉ muốn lấy một chiếc lông của nó. Cô cả nghĩ cách nhổ trộm một chiếc. Khi chàng Ngốc vừa ra, chị nắm ngay lấy cánh ngỗng. Nhưng tay bị dính chặt vào đó, không rút ra được. Một lát sau, cô thứ hai đến cũng chỉ chăm chăm muốn lấy một chiếc lông vàng. Cô vừa đụng đến cô chị thì bị dính ngay vào chị. Cô thứ ba cũng tới cũng định tâm lấy lông. Hai cô chị kêu lên:\n" +
+            "\n" +
+            "– Ối trời ơi là trời, tránh ra, tránh ra!\n" +
+            "\n" +
+            "Cô út chẳng hiểu tại sao lại phải tránh ra, nghĩ bụng các chị làm thì mình cũng làm được, liền nhảy lại. Cô vừa đụng tới các chị thì cũng bị dính vào. Cả ba cô suốt đêm phải ở liền với ngỗng. Sáng hôm sau, chàng ngốc mang ngỗng ra đi, cũng chẳng để ý đến ba cô dính vào ngỗng. Các cô đành lẽo đẽo theo sau, rẽ sang phải sang trái tùy theo bước của anh. Giữa đồng, cha xứ gặp cả đoàn người bèn nói:\n" +
+            "\n" +
+            "– Đồ gái quạ mổ, không biết xấu hổ à? Cứ bám lấy giai ra đồng như vậy coi có được không?\n" +
+            "\n" +
+            "Cha liền nắm tay cô út kéo lại; cha vừa đụng đến thì chính cha cũng bị dính vào và cũng phải lẽo đẽo đi theo. Một lúc sau, người giữ đồ thánh thấy cha xứ lẽo đẽo theo ba cô, ngạc nhiên quá hỏi:\n" +
+            "\n" +
+            "– Thưa cha, cha đi đâu mà vội vàng thế? Cha nhớ là hôm nay còn phải làm lễ rửa tội cho một đứa trẻ nữa cơ đấy.\n" +
+            "\n" +
+            "Ông ta chạy theo nắm áo cha thì cũng bị dính vào. Năm người đang bước thấp bước cao như vậy thì gặp hai bác nông dân vác cuốc ở đồng về. Cha xứ gọi họ, nhờ gỡ hộ mình và người giữ đồ thánh ra. Hai bác vừa sờ đến thì bị dính vào nốt. Như vậy là bảy người đi theo chàng Ngốc ôm ngỗng.\n" +
+            "\n" +
+            "Anh đi tới kinh kỳ. Nhà vua có một cô gái nghiêm nghị, không ai làm cô cười được. Vua phán là ai làm cho cô cười thì được lấy cô. Chàng Ngốc nghe thấy nói vậy, liền vác ngỗng và cả bảy người theo đuôi đến trước công chúa. Nàng thấy bảy người lếch thếch theo nhau, liền cười sằng sặc, không kìm lại được nữa. Chàng Ngốc liền đòi lấy nàng. Vua không thích chàng rể này, viện cớ nọ cớ kia để từ chối, ra điều kiện cho anh phải tìm ra người uống hết được một hầm rượu vang thì mới cho lấy. Chàng Ngốc nghĩ đến ông lão nhỏ bé, có thể giúp được mình,\n" +
+            "liền vào rừng tìm. Tới chỗ cây bị đẵn, anh thấy có một người ngồi, mặt buồn rười rượi. Anh hỏi y sao lại buồn bao thế. Y đáp:\n" +
+            "\n" +
+            "– Tôi khát quá, uống bao nhiêu cũng không đỡ khát. Tôi không chịu được nước lã. Quả là tôi đã uống cạn một thùng rượu, nhưng chẳng qua mới như muối bỏ bể.\n" +
+            "\n" +
+            "Chàng Ngốc nói:\n" +
+            "\n" +
+            "– Thế để tôi giúp anh. Anh chỉ việc đi với tôi là tha hồ uống.\n" +
+            "\n" +
+            "Anh dẫn người ấy đến hầm rượu nhà vua. Y nhảy xổ vào những thùng rượu to, uống mãi, uống mãi đến căng cả bụng. Chưa hết một ngày, anh đã uống sạch cả hầm rượu.\n" +
+            "\n" +
+            "Chàng Ngốc lại đòi lấy công chúa. Nhưng vua bực lắm, không muốn để một tên vớ vẩn mà mọi người gọi là Ngốc lấy con gái mình. Vua lại ra những điều kiện mới: anh ta phải tìm cho ra được một người ăn nổi một núi bánh. Chàng Ngốc chẳng suy nghĩ gì lâu la, lại đi ngay vào rừng. Vẫn ở chỗ cũ có một người mặt mũi thiểu não, thắt chặt bụng bằng dây da và nói:\n" +
+            "\n" +
+            "– Tôi đã ăn cả một lò bánh, nhưng không ăn thua gì. Tôi háu đói quá. Bụng vẫn lép kẹp, phải thắt lại kẻo chết đói mất.\n" +
+            "\n" +
+            "Chàng Ngốc thấy vậy cả mừng bảo:\n" +
+            "\n" +
+            "– Thôi đi đi, đi với tôi thì tha hồ no nê.\n" +
+            "\n" +
+            "Anh dẫn người ấy vào triều. Vua cho tập trung bột mì cả nước lại rồi sai nướng một núi bánh khổng lồ. Người ở rừng chỉ ăn một ngày hết sạch cả núi bánh.\n" +
+            "\n" +
+            "Lần thứ ba, chàng Ngốc lại đòi lấy công chúa. Vua tìm cách thoái thác, đòi có một chiếc tàu đi được cả ở trên cạn lẫn dưới nước. Vua nói:\n" +
+            "\n" +
+            "– Nếu tàu ấy cặp bến thì lập tức ngươi được lấy con gái ta.\n" +
+            "\n" +
+            "Chàng Ngốc đi thẳng vào rừng. Ông lão được anh cho bánh vẫn ngồi đó, bảo anh:\n" +
+            "\n" +
+            "– Chính lão đã uống và ăn hộ cho anh. Để lão cho anh chiếc tàu. Gì lão cũng làm, vì anh đã cư xử với lão tử tế.\n" +
+            "\n" +
+            "Lão bèn cho anh một chiếc tàu đi được cả trên cạn lẫn dưới nước. Vua thấy không còn cách gì giữ con gái được nữa đành cho tổ chức đám cưới. Sau khi vua mất, chàng Ngốc lên ngôi. Vợ chồng sống hưởng hạnh phúc.','https://truyencotich.vn/wp-content/uploads/2012/10/18.jpg',1)";
     private String SQLQuery005 = "INSERT INTO truyen VALUES (null,'Thông Linh Phi','Sư phụ nói vận mệnh không phải do trời định, vận mệnh là do tự mình nỗ lực mà thay đổi. \n" +
             "\n" +
             "\n" +
@@ -1600,4 +1750,5 @@ public class databasedoctruyen extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_TRUYEN,null);
         return res;
     }
+
 }
