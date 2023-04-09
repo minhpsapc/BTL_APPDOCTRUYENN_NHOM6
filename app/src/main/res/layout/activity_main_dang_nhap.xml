@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background0"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="APP ĐỌC TRUYỆN"
+            android:background="@drawable/botron3"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Username"
+            android:textColorHint="#000000"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/customer_tv_noidung"
+            android:padding="20dp"
+            />
+        <EditText
+            android:id="@+id/edtPasswod"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#000000"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/customer_tv_noidung"
+            android:padding="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Forget Password?"
+            android:background="@drawable/customer_tv_noidung"
+            android:textColor="#0A023C"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/botron4"
+            />
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Đăng ký"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botron2"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
