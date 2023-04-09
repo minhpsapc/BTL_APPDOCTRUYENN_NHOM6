@@ -1595,4 +1595,9 @@ public class databasedoctruyen extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+    public Cursor getData2(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_TRUYEN,null);
+        return res;
+    }
 }
