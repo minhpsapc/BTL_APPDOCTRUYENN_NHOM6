@@ -110,7 +110,7 @@ public class HomeFragment extends Fragment {
         mangquangcao.add("https://vcdn-vnexpress.vnecdn.net/2021/09/15/148434662-2961600134114291-582-2205-6351-1631711557.jpg");
         mangquangcao.add("https://www.tlu.edu.vn/Portals/0/2018/Thang4/truongdep17.jpg");
         mangquangcao.add("https://ims.baoyenbai.com.vn/NewsImg/12_2022/257287_26-12-thuyloi.jpg");
-        mangquangcao.add("https://lh3.googleusercontent.com/p/AF1QipNNMbETsHCu-WI7MO0uI0mUYQo6AZYSLa1JIC87=s1360-w1360-h1020");
+        mangquangcao.add("https://xdcs.cdnchinhphu.vn/thumb_w/650/446259493575335936/2022/9/15/hoc-phi-dh-thuy-loi-1663230575315978566599-0-19-457-750-crop-16632305854841980645348.jpg");
 
         for (int i=0; i<mangquangcao.size();i++)
         {
